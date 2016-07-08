@@ -27,9 +27,7 @@ describe('react-ga', function () {
 
       getElementsByTagName: function (name) {
         return [{
-          parentNode: {
-            insertBefore: function () {}
-          }
+          appendChild: function (child) {}
         }];
       }
     };
